@@ -2,7 +2,7 @@ package net.hexcombat;
 
 import net.hexcombat.registry.hexcombatIotaTypeRegistry;
 import net.hexcombat.registry.hexcombatItemRegistry;
-import net.hexcombat.registry.hexcombatPatternRegistry;
+import net.hexcombat.registry.HexCombatPatternRegistry;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,7 +21,7 @@ public class HexCombat {
 
         hexcombatItemRegistry.init();
         hexcombatIotaTypeRegistry.init();
-        hexcombatPatternRegistry.init();
+        HexCombatPatternRegistry.init();
 
         LOGGER.info(DummyAbstractions.getConfigDirectory().toAbsolutePath().normalize().toString());
     }
