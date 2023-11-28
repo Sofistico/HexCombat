@@ -1,6 +1,6 @@
 # Dummy Hex Casting Addon
 
-Or HexDummy for short! This is an up-to-date bare-bones template for starting a multiloader Hex Casting addon on
+Or hexcombat for short! This is an up-to-date bare-bones template for starting a multiloader Hex Casting addon on
 1.19.2 with Architectury. Includes all necessary dependencies on both Forge and Fabric loaders, plus some demo
 bits. There is nothing specifically for Quilt here because Fabric builds implicitly support Quilt.
 
@@ -16,9 +16,9 @@ from [Architectury templates](https://github.com/architectury/architectury-templ
 2. Add `modrinthApiToken` and `curseforgeApiToken` values to your user-specific gradle properties
    in [Gradle User Home](https://docs.gradle.org/current/userguide/directory_layout.html#dir:gradle_user_home).
    You can leave them empty for now.
-3. In the entire project, rename occurrences of `hexdummy` to your mod's id, both in files and in directory structure.
+3. In the entire project, rename occurrences of `hexcombat` to your mod's id, both in files and in directory structure.
    Preferably also change occurrences adjacent to "Dummy" in text and file names to something related to your
-   project, and change the base package path to something other than `net.hexdummy`, e.g.
+   project, and change the base package path to something other than `net.hexcombat`, e.g.
    to `io.github.yourname.yourmod`.
 3. Check out the [Architectury wiki](https://docs.architectury.dev/start) if you haven't yet. If you can't find
    something there, try searching on their Discord.

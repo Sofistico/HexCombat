@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "hexdummy",
+  "id": "hexcombat",
   "version": "${version}",
   "name": "Dummy Hex Casting Addon",
   "description": "Please describe me!",
@@ -16,15 +16,15 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.hexdummy.fabric.HexDummyFabric"
+      "net.hexcombat.fabric.hexcombatFabric"
     ],
     "client": [
-      "net.hexdummy.fabric.HexDummyClientFabric"
+      "net.hexcombat.fabric.hexcombatClientFabric"
     ]
   },
   "mixins": [
-    "hexdummy-common.mixins.json",
-    "hexdummy.mixins.json"
+    "hexcombat-common.mixins.json",
+    "hexcombat.mixins.json"
   ],
   "depends": {
     "minecraft": ">=1.19.2",
