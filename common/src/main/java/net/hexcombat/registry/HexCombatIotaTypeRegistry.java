@@ -9,9 +9,9 @@ import net.minecraft.util.registry.Registry;
 import java.util.HashMap;
 import java.util.Map;
 
-import static net.hexcombat.hexcombat.id;
+import static net.hexcombat.HexCombat.id;
 
-public class hexcombatIotaTypeRegistry {
+public class HexCombatIotaTypeRegistry {
     public static Map<Identifier, IotaType<?>> TYPES = new HashMap<>();
 
     public static void init() {

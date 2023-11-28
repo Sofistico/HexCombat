@@ -9,9 +9,9 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.registry.Registry;
 
-import static net.hexcombat.hexcombat.id;
+import static net.hexcombat.HexCombat.id;
 
-public class hexcombatItemRegistry {
+public class HexCombatItemRegistry {
     // Register items through this
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(hexcombat.MOD_ID, Registry.ITEM_KEY);
 

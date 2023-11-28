@@ -11,7 +11,7 @@ import net.hexcombat.hexcombat;
  * Feel free to check out the <a href="https://github.com/architectury/architectury-templates">Architectury templates</a>
  * if you want to see how to add quilt-specific code.
  */
-public class hexcombatFabric implements ModInitializer {
+public class HexCombatFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         hexcombat.init();

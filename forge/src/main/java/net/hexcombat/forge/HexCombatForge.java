@@ -11,7 +11,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
  * something platform-specific.
  */
 @Mod(hexcombat.MOD_ID)
-public class hexcombatForge {
+public class HexCombatForge {
     public hexcombatForge() {
         // Submit our event bus to let architectury register our content on the right time
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
