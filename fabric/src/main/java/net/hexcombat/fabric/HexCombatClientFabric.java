@@ -1,7 +1,7 @@
 package net.hexcombat.fabric;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.hexcombat.hexcombatClient;
+import net.hexcombat.HexCombatClient;
 
 /**
  * Fabric client loading entrypoint.
@@ -9,6 +9,6 @@ import net.hexcombat.hexcombatClient;
 public class HexCombatClientFabric implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
-        hexcombatClient.init();
+        HexCombatClient.init();
     }
 }

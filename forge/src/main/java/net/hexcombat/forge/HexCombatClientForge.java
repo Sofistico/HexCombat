@@ -1,6 +1,6 @@
 package net.hexcombat.forge;
 
-import net.hexcombat.hexcombatClient;
+import net.hexcombat.HexCombatClient;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 /**
@@ -8,6 +8,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
  */
 public class HexCombatClientForge {
     public static void init(FMLClientSetupEvent event) {
-        hexcombatClient.init();
+        HexCombatClient.init();
     }
 }

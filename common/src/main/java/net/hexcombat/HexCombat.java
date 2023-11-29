@@ -1,7 +1,7 @@
 package net.hexcombat;
 
-import net.hexcombat.registry.hexcombatIotaTypeRegistry;
-import net.hexcombat.registry.hexcombatItemRegistry;
+import net.hexcombat.registry.HexCombatIotaTypeRegistry;
+import net.hexcombat.registry.HexCombatItemRegistry;
 import net.hexcombat.registry.HexCombatPatternRegistry;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
@@ -19,8 +19,8 @@ public class HexCombat {
     public static void init() {
         LOGGER.info("Hex Dummy says hello!");
 
-        hexcombatItemRegistry.init();
-        hexcombatIotaTypeRegistry.init();
+        HexCombatItemRegistry.init();
+        HexCombatIotaTypeRegistry.init();
         HexCombatPatternRegistry.init();
 
         LOGGER.info(DummyAbstractions.getConfigDirectory().toAbsolutePath().normalize().toString());

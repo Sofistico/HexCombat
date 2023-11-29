@@ -1,7 +1,7 @@
 package net.hexcombat.fabric;
 
 import net.fabricmc.api.ModInitializer;
-import net.hexcombat.hexcombat;
+import net.hexcombat.HexCombat;
 
 /**
  * This is your loading entrypoint on fabric(-likes), in case you need to initialize
@@ -14,6 +14,6 @@ import net.hexcombat.hexcombat;
 public class HexCombatFabric implements ModInitializer {
     @Override
     public void onInitialize() {
-        hexcombat.init();
+        HexCombat.init();
     }
 }
