@@ -8,11 +8,11 @@
   "pages": [
     {
       "type": "hexcasting:pattern",
-      "op_id": "hexcombat:shear",
-      "anchor": "hexcombat:shear",
+      "op_id": "hexcombat:shears",
+      "anchor": "hexcombat:shears",
       "input": "entity",
       "output": "",
-      "text": "hexcombat.page.util_spells.shear"
+      "text": "hexcombat.page.util_spells.shears"
     }
   ]
 }
