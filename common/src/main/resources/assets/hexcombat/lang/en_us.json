@@ -1,11 +1,11 @@
 {
   "item.hexcombat.dummy_item": "Dummy Item",
-  "hexcasting.spell.hexcombat:shear": "Shear Sheep",
+  "hexcasting.spell.hexcombat:shears": "Shear Sheep",
   "hexcasting.spell.hexcombat:signum": "Signum Purification",
-  "hexcasting.spell.book.hexcombat:shear": "Shear",
+  "hexcasting.spell.book.hexcombat:shears": "Shear",
   "hexcasting.spell.book.hexcombat:signum": "Dum. Actn.",
   "hexcombat.entry.util_spells": "Util Spells",
   "hexcombat.entry.dummy_actions": "Dummy Actions",
-  "hexcombat.page.util_spells.shear": "Accepts a sheep entity, tries to shear it.",
+  "hexcombat.page.util_spells.shears": "Accepts a sheep entity, tries to shear it.",
   "hexcombat.page.dummy_actions.signum": "Accepts a number, returns -1 if it is negative, 0 if 0, 1 if positive."
 }
