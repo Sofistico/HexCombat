@@ -1,11 +1,16 @@
 {
   "item.hexcombat.dummy_item": "Dummy Item",
   "hexcasting.spell.hexcombat:shears": "Shear Sheep",
+  "hexcasting.spell.hexcombat:harm": "Harm Entity",
+  "hexcombat.harm.notvalidentity": "Not able to harm entity!",
   "hexcasting.spell.hexcombat:signum": "Signum Purification",
   "hexcasting.spell.book.hexcombat:shears": "Shear",
+  "hexcasting.spell.book.hexcombat:harm": "Harm Entity",
   "hexcasting.spell.book.hexcombat:signum": "Dum. Actn.",
   "hexcombat.entry.util_spells": "Util Spells",
+  "hexcombat.entry.combat_spells": "Combat Spells",
   "hexcombat.entry.dummy_actions": "Dummy Actions",
-  "hexcombat.page.util_spells.shears": "Accepts a sheep entity, tries to shear it.",
+  "hexcombat.page.util_spells.shears": "Accepts a sheep entity, tries to shear it. \nCosts 1 amethyst dust",
+  "hexcombat.page.combat_spells.harm": "Accepts an entity, harms it based on the number provided in the argument, costs each damage as 2 amethyst dust",
   "hexcombat.page.dummy_actions.signum": "Accepts a number, returns -1 if it is negative, 0 if 0, 1 if positive."
 }

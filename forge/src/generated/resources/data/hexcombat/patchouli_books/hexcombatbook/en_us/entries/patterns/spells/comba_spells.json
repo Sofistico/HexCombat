@@ -1,0 +1,18 @@
+{
+  "name": "hexcombat.entry.util_spells",
+  "category": "hexcasting:patterns/spells",
+  "icon": "minecraft:diamond_sword",
+  "sortnum": 0,
+  "advancement": "hexcasting:root",
+  "read_by_default": true,
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcombat:harm",
+      "anchor": "hexcombat:harm",
+      "input": "entity",
+      "output": "",
+      "text": "hexcombat.page.combat_spells.harm"
+    }
+  ]
+}

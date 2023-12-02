@@ -8,12 +8,10 @@ import at.petrak.hexcasting.api.spell.casting.CastingContext
 import at.petrak.hexcasting.api.spell.getEntity
 import at.petrak.hexcasting.api.spell.iota.Iota
 import at.petrak.hexcasting.api.spell.mishaps.MishapBadEntity
-import at.petrak.hexcasting.ktxt.UseOnContext
 import net.minecraft.entity.passive.SheepEntity
 import net.minecraft.item.ItemStack
 import net.minecraft.item.Items
 import net.minecraft.text.Text
-import net.minecraft.util.hit.EntityHitResult
 
 class OpShears : SpellAction {
     /**
@@ -35,7 +33,8 @@ class OpShears : SpellAction {
      * them. All the code that actually makes changes to the world (breaking blocks, teleporting things,
      * etc.) should be in the private [Spell] data class below.
      */
-    override fun execute(args: List<Iota>, ctx: CastingContext): Triple<RenderedSpell, Int, List<ParticleSpray>> {
+    override fun execute(args: List<Iota>, ctx: CastingContext):
+            Triple<RenderedSpell, Int, List<ParticleSpray>> {
         val target = args.getEntity(0, argc)
 
         // makes sure that the position is inside the range
