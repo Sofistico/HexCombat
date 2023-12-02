@@ -8,23 +8,26 @@ import at.petrak.hexcasting.api.spell.mishaps.MishapBadEntity
 import net.minecraft.entity.Entity
 import net.minecraft.entity.damage.DamageSource
 import net.minecraft.text.Text
+import net.minecraft.util.math.MathHelper
 
 class OpHarm : SpellAction {
     override val argc = 2
 
     override fun execute(args: List<Iota>, ctx: CastingContext): Triple<RenderedSpell, Int, List<ParticleSpray>>? {
         val target = args.getEntity(0, argc);
-        val damage = args.getPositiveDouble(1, argc);
+        val damage = args.getPositiveDoubleUnderInclusive(1, 10.0, argc);
         ctx.assertEntityInRange(target);
         if(target.isInvulnerable || !target.isAttackable){
             throw MishapBadEntity(target,
                 Text.translatable("text.hexcombat.harm.notvalidentity"))
         }
-            val cost = MediaConstants.DUST_UNIT + (damage.toInt() * 2)
+        val clampedDamage = MathHelper.clamp(damage, 0.0, 10.0)
+        val cost = MediaConstants.DUST_UNIT * (clampedDamage * 2 + 1.0)
         return Triple(
-            Spell(target, damage.toFloat()),
-            cost,
-            listOf(ParticleSpray.burst(target.pos, 1.0))
+            Spell(target,
+                damage.toFloat()),
+                cost.toInt(),
+                listOf(ParticleSpray.burst(target.pos, 1.0))
         )
     }
 
@@ -34,6 +37,5 @@ class OpHarm : SpellAction {
             source.setUsesMagic()
             entity.damage(source, damage)
         }
-
     }
 }
