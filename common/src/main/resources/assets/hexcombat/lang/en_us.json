@@ -11,6 +11,6 @@
   "hexcombat.entry.combat_spells": "Combat Spells",
   "hexcombat.entry.dummy_actions": "Dummy Actions",
   "hexcombat.page.util_spells.shears": "Accepts a sheep entity, tries to shear it. \nCosts 1 amethyst dust",
-  "hexcombat.page.combat_spells.harm": "Accepts an entity, harms it based on the number provided in the argument, costs each damage as 2 amethyst dust",
+  "hexcombat.page.combat_spells.harm": "Accepts an entity, harms it based on the number provided in the argument, costs 1 amethyst dust plus double damage",
   "hexcombat.page.dummy_actions.signum": "Accepts a number, returns -1 if it is negative, 0 if 0, 1 if positive."
 }

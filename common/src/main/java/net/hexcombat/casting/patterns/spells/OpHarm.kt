@@ -20,7 +20,7 @@ class OpHarm : SpellAction {
             throw MishapBadEntity(target,
                 Text.translatable("text.hexcombat.harm.notvalidentity"))
         }
-            val cost = MediaConstants.DUST_UNIT * (damage.toInt() * 2)
+            val cost = MediaConstants.DUST_UNIT + (damage.toInt() * 2)
         return Triple(
             Spell(target, damage.toFloat()),
             cost,
