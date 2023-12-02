@@ -1,13 +1,16 @@
 package net.hexcombat.registry;
 
 import at.petrak.hexcasting.api.PatternRegistry;
+import at.petrak.hexcasting.api.misc.MediaConstants;
 import at.petrak.hexcasting.api.spell.Action;
 import at.petrak.hexcasting.api.spell.math.HexDir;
 import at.petrak.hexcasting.api.spell.math.HexPattern;
+import at.petrak.hexcasting.common.casting.operators.spells.OpPotionEffect;
 import kotlin.Triple;
 import net.hexcombat.casting.patterns.math.OpSignum;
 import net.hexcombat.casting.patterns.spells.OpHarm;
 import net.hexcombat.casting.patterns.spells.OpShears;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.Identifier;
 
 import java.util.ArrayList;
@@ -22,6 +25,9 @@ public class HexCombatPatternRegistry {
     public static HexPattern SHEARS = register(HexPattern.fromAngles("eed", HexDir.WEST), "shears", new OpShears());
     public static HexPattern HARM = register(HexPattern.fromAngles("wqaa", HexDir.WEST), "harm", new OpHarm());
     public static HexPattern SIGNUM = register(HexPattern.fromAngles("edd", HexDir.NORTH_WEST), "signum", new OpSignum());
+    public static HexPattern SLOWFALL = registerPerWorld(HexPattern.fromAngles("aqqqqawwawawd", HexDir.EAST), "potion/slow-fall", new OpPotionEffect(StatusEffects.SLOW_FALLING, MediaConstants.DUST_UNIT / 3, true, true, true));
+    public static HexPattern WATERBREATH = registerPerWorld(HexPattern.fromAngles("wawwqqawdwdw", HexDir.WEST), "potion/water-breath", new OpPotionEffect(StatusEffects.WATER_BREATHING, MediaConstants.DUST_UNIT / 5, true, true, true));
+
 
     public static void init() {
         try {

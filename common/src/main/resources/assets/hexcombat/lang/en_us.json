@@ -2,15 +2,21 @@
   "item.hexcombat.dummy_item": "Dummy Item",
   "hexcasting.spell.hexcombat:shears": "Shear Sheep",
   "hexcasting.spell.hexcombat:harm": "Harm Entity",
+  "hexcasting.spell.hexcombat:potion/water-breath": "Water Breathing",
+  "hexcasting.spell.hexcombat:potion/slow-fall": "Slow Fall",
   "hexcombat.harm.notvalidentity": "Not able to harm entity!",
   "hexcasting.spell.hexcombat:signum": "Signum Purification",
   "hexcasting.spell.book.hexcombat:shears": "Shear",
   "hexcasting.spell.book.hexcombat:harm": "Harm Entity",
+  "hexcasting.spell.book.hexcombat:potion/slow-fall": "Slw. Fall.",
+  "hexcasting.spell.book.hexcombat:potion/water-breath": "Wtr. Breath.",
   "hexcasting.spell.book.hexcombat:signum": "Dum. Actn.",
   "hexcombat.entry.util_spells": "Util Spells",
   "hexcombat.entry.combat_spells": "Combat Spells",
   "hexcombat.entry.dummy_actions": "Dummy Actions",
   "hexcombat.page.util_spells.shears": "Accepts a sheep entity, tries to shear it. \nCosts 1 amethyst dust",
   "hexcombat.page.combat_spells.harm": "Accepts an entity, harms it based on the number provided in the argument, costs 1 amethyst dust plus double damage. There seems to be a limit of how strong i can make this spell, anything above 10 nature doesn't let me cast",
-  "hexcombat.page.dummy_actions.signum": "Accepts a number, returns -1 if it is negative, 0 if 0, 1 if positive."
+  "hexcombat.page.dummy_actions.signum": "Accepts a number, returns -1 if it is negative, 0 if 0, 1 if positive.",
+  "hexcombat.page.combat_spells.potion/slow-fall": "Inflicts $(thing)slow fall/$. Base cost is one $(l:items/amethyst)$(item)Amethyst Dust/$ per 3 seconds.",
+  "hexcombat.page.combat_spells.potion/water-breath": "Inflicts $(thing)water breathing/$. Base cost is one $(l:items/amethyst)$(item)Amethyst Dust/$ per 5 seconds"
 }

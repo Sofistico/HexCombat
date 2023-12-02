@@ -13,6 +13,22 @@
       "input": "entity, number",
       "output": "",
       "text": "hexcombat.page.combat_spells.harm"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcombat:potion/water-breath",
+      "anchor": "hexcombat:potion/water-breath",
+      "input": "entity, number, number",
+      "output": "",
+      "text": "hexcombat.page.combat_spells.potion/water-breath"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexcombat:potion/slow-fall",
+      "anchor": "hexcombat:potion/slow-fall",
+      "input": "entity, number, number",
+      "output": "",
+      "text": "hexcombat.page.combat_spells.potion/slow-fall"
     }
   ]
 }
