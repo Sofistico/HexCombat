@@ -27,8 +27,13 @@
     "python.testing.pytestEnabled": true,
     "files.associations": {
         "*.js.jinja": "javascript",
-        "*.css.jinja": "css",
         "*.jcss.jinja": "jinja-css", // for files with a lot of jinja stuff, where the linting isn't useful
         "*.json5.jinja": "json5",
+        "*.css.jinja": "jinja-css",
+        "*.gradle.jinja": "jinja-groovy",
+        "*.java.jinja": "jinja-java",
+        "*.kt.jinja": "jinja-groovy",
+        "*.mcmeta.jinja": "jinja-json",
+        "*.properties.jinja": "jinja-properties"
     },
 }

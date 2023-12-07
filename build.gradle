@@ -158,14 +158,3 @@ tasks.register("viewLatestChangelog") {
         println(getLatestChangelog())
     }
 }
-
-tasks.register("generateOnlineNotebookPage") {
-    group "documentation"
-    description "Pulls the addon's Hex Notebook documentation from the project and generates a page in Hex Casting's online documentation style, at doc/out.html."
-
-    exec {
-        workingDir "${rootDir}"
-        executable 'python'
-        args "doc/collate_data.py", "common/src/main/resources", "doc/HexCastingResources", "hexcombat", "hexcombatbook", "doc/template.html", "doc/out.html"
-    }
-}
