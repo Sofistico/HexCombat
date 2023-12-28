@@ -1,7 +1,7 @@
 {
   "name": "hexcombat.entry.combat_spells",
   "category": "hexcasting:patterns/spells",
-  "icon": "minecraft:diamond_sword",
+  "icon": "minecraft:iron_sword",
   "sortnum": 0,
   "advancement": "hexcasting:root",
   "read_by_default": true,

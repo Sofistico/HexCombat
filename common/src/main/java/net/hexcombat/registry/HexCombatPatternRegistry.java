@@ -7,8 +7,7 @@ import at.petrak.hexcasting.api.spell.math.HexDir;
 import at.petrak.hexcasting.api.spell.math.HexPattern;
 import at.petrak.hexcasting.common.casting.operators.spells.OpPotionEffect;
 import kotlin.Triple;
-import net.hexcombat.casting.patterns.math.OpSignum;
-import net.hexcombat.casting.patterns.spells.OpHarm;
+import net.hexcombat.casting.patterns.math.OpGetCircle;
 import net.hexcombat.casting.patterns.spells.OpShears;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.util.Identifier;
@@ -23,11 +22,11 @@ public class HexCombatPatternRegistry {
     public static List<Triple<HexPattern, Identifier, Action>> PER_WORLD_PATTERNS = new ArrayList<>();
     // IMPORTANT: be careful to keep the registration calls looking like this or be prepared to edit the regex pattern on line 199 of the docgen script (doc/collate_data.py)
     public static HexPattern SHEARS = register(HexPattern.fromAngles("eed", HexDir.WEST), "shears", new OpShears());
-    public static HexPattern HARM = register(HexPattern.fromAngles("wqaa", HexDir.WEST), "harm", new OpHarm());
-    public static HexPattern SIGNUM = register(HexPattern.fromAngles("edd", HexDir.NORTH_WEST), "signum", new OpSignum());
+    public static HexPattern CIRCLE = register(HexPattern.fromAngles("qqqqadd", HexDir.EAST), "get-circle", new OpGetCircle());
+    // great spells
     public static HexPattern SLOWFALL = registerPerWorld(HexPattern.fromAngles("aqqqqawwawawd", HexDir.EAST), "potion/slow-fall", new OpPotionEffect(StatusEffects.SLOW_FALLING, MediaConstants.DUST_UNIT / 3, true, true, true));
     public static HexPattern WATERBREATH = registerPerWorld(HexPattern.fromAngles("wawwqqawdwdw", HexDir.WEST), "potion/water-breath", new OpPotionEffect(StatusEffects.WATER_BREATHING, MediaConstants.DUST_UNIT / 5, true, true, true));
-
+    public static HexPattern GLOW = registerPerWorld(HexPattern.fromAngles("aqqqqqeawaw", HexDir.NORTH_WEST), "potion/glowing", new OpPotionEffect(StatusEffects.GLOWING, MediaConstants.DUST_UNIT, false, false, true));
 
     public static void init() {
         try {

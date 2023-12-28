@@ -6,13 +6,5 @@
   "advancement": "hexcasting:root",
   "read_by_default": true,
   "pages": [
-    {
-      "type": "hexcasting:pattern",
-      "op_id": "hexcombat:harm",
-      "anchor": "hexcombat:harm",
-      "input": "entity, number",
-      "output": "",
-      "text": "hexcombat.page.combat_spells.harm"
-    }
   ]
 }
